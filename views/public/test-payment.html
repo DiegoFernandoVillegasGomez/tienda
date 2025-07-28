@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Test Pago Wompi - Coffee Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../../resources/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../../resources/css/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">🧪 Test de Pago Wompi</h2>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Datos de Prueba</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <!-- Información del Cliente -->
+                            <h6>👤 Información del Cliente</h6>
+                            <div class="mb-3">
+                                <label class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" value="Juan Pérez Test" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email:</label>
+                                <input type="email" class="form-control" value="test@example.com" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Teléfono:</label>
+                                <input type="tel" class="form-control" value="7777-7777" readonly>
+                            </div>
+                            
+                            <hr>
+                            
+                            <!-- Información de Tarjeta -->
+                            <h6>💳 Tarjetas de Prueba</h6>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card bg-success text-white mb-2">
+                                        <div class="card-body p-2">
+                                            <small><strong>✅ VISA EXITOSA</strong></small><br>
+                                            <small>4242424242424242</small><br>
+                                            <small>CVV: 123 | 12/25</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card bg-danger text-white mb-2">
+                                        <div class="card-body p-2">
+                                            <small><strong>❌ VISA FALLIDA</strong></small><br>
+                                            <small>4000000000000002</small><br>
+                                            <small>CVV: 123 | 12/25</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card bg-primary text-white mb-2">
+                                        <div class="card-body p-2">
+                                            <small><strong>✅ MASTERCARD</strong></small><br>
+                                            <small>5555555555554444</small><br>
+                                            <small>CVV: 456 | 03/26</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card bg-warning text-dark mb-2">
+                                        <div class="card-body p-2">
+                                            <small><strong>⏳ PENDIENTE</strong></small><br>
+                                            <small>4000000000000069</small><br>
+                                            <small>CVV: 123 | 12/25</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <hr>
+                            
+                            <!-- Total de Prueba -->
+                            <div class="alert alert-info">
+                                <strong>💰 Total a Pagar: $15.50 USD</strong><br>
+                                <small>Este es un monto de prueba</small>
+                            </div>
+                            
+                            <!-- Botones -->
+                            <div class="d-grid gap-2">
+                                <a href="payment.html" class="btn btn-success btn-lg">
+                                    <i class="bi bi-credit-card"></i> Ir a Página de Pago
+                                </a>
+                                <a href="cart.html" class="btn btn-primary">
+                                    <i class="bi bi-cart"></i> Ir al Carrito
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Instrucciones -->
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h6>📝 Instrucciones</h6>
+                    </div>
+                    <div class="card-body">
+                        <ol>
+                            <li>Asegúrate de estar <strong>logueado como cliente</strong></li>
+                            <li>Ve al <strong>carrito</strong> y agrega productos</li>
+                            <li>Haz clic en <strong>"Pagar con Wompi"</strong></li>
+                            <li>Usa las <strong>tarjetas de prueba</strong> de arriba</li>
+                            <li>Completa el formulario y procesa el pago</li>
+                        </ol>
+                        
+                        <div class="alert alert-warning mt-3">
+                            <strong>⚠️ Importante:</strong> Estas son tarjetas de prueba. No se realizará ningún cargo real.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../resources/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
